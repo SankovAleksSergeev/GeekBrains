@@ -9,8 +9,8 @@
 
 // if ((num>99)&&(num<999))
 // {
-//     int num2 = num % 100;
-//     Console.WriteLine(num2/10);
+//     int num2 = (num % 100)/10;
+//     Console.WriteLine(num2);
 // }
 // else
 // {
