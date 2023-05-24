@@ -7,10 +7,10 @@
 // Console.WriteLine("Введите трехзначное число");
 // int num = Convert.ToInt32(Console.ReadLine());
 
-// if ((num>99)&&(num<999))
+// if ((num>99)&&(num<1000))
 // {
-//     int num2 = num % 100;
-//     Console.WriteLine(num2/10);
+//     int num2 = (num % 100)/10;
+//     Console.WriteLine(num2);
 // }
 // else
 // {
@@ -30,55 +30,25 @@
 // Console.WriteLine("Введите число больше чем 99");
 // int num = Convert.ToInt32(Console.ReadLine());
 
-// if ((num>99) && (num<1000))
+// if(num>999)
 // {
-//     int num2 = num %10;
-//     Console.WriteLine(num2); 
+//     while (num > 999)
+//     {
+//         num = num/10;
+//     }
+//     num = num%10;
+//     Console.WriteLine(num);
 // }
-// else if ( (num>999)&& (num<10000))
+// else if (num<100)
 // {
-//     int num2 = (num %100)/10;
+// Console.WriteLine("Ошибка! Третьей цифры нет");
+// }
+// else if ((num>99)||(num<999))
+// {
+//     num = num%10;
+//     Console.WriteLine(num);
+// }
 
-//     Console.WriteLine(num2);
-// }
-// else if ( (num>9999)&& (num<100000))
-// {
-//     int num2 = (num %1000)/100;
-
-//     Console.WriteLine(num2);
-// }
-// else if ( (num>99999)&& (num<1000000))
-// {
-//     int num2 = (num %10000)/1000;
-
-//     Console.WriteLine(num2);
-// }
-// else if ( (num>999999)&& (num<10000000))
-// {
-//     int num2 = (num %100000)/10000;
-
-//     Console.WriteLine(num2);
-// }
-// else if ( (num>9999999)&& (num<100000000))
-// {
-//     int num2 = (num %1000000)/100000;
-
-//     Console.WriteLine(num2);
-// }
-// else if ( (num>99999999)&& (num<1000000000))
-// {
-//     int num2 = (num %10000000)/1000000;
-
-//     Console.WriteLine(num2);
-// }
-// else if ( num>1000000000)
-// {
-//     Console.WriteLine("Введено слишком большое число!!");
-// }
-// else
-// {
-//     Console.WriteLine("Ошибка! Третьей цифры нет. Введите число больше чем 99"); 
-// }
 
 //----------------------------------------------------------------------------------------------------------------
 
