@@ -109,3 +109,157 @@
 // {
 //     Proverka2(number);
 // }
+
+
+//---------------------------------------------------------------------------------------------------------------------------------
+// Задача 2: Напишите программу, которая на вход принимает два числа и выдаёт, какое число большее, а какое меньшее.
+// a = 5; b = 7 -> max = 7
+// a = 2 b = 10 -> max = 10
+// a = -9 b = -3 -> max = -3
+
+
+// int Input1 (string message)
+// {
+//     Console.WriteLine(message);
+//     string Peremen = Console.ReadLine();
+//     int Peremen2 = Convert.ToInt32(Peremen);
+//     return Peremen2;
+// }
+// int max1 = Input1 ("Введите первое число");
+// int max2 = Input1 ("Введите второе число");
+// if (max1>max2)
+// {
+//     Console.WriteLine($"max число = {max1}");
+
+// }
+// else 
+// {
+//     Console.WriteLine($"max число = {max2}");
+// }
+
+
+//---------------------------------------------------------------------------------------------------------------------------------
+// Задача 4: Напишите программу, которая принимает на вход три числа и выдаёт максимальное из этих чисел.
+// 2, 3, 7 -> 7
+// 44 5 78 -> 78
+// 22 3 9 -> 22
+
+
+// int Input (string message)
+// {
+//     Console.WriteLine(message);
+//     string Peremen = Console.ReadLine();
+//     int Peremen2= Convert.ToInt32(Peremen);
+//     return Peremen2;
+// }
+
+// int max1 =  Input("Введите 1 число ");
+// int max2 =  Input("Введите 2 число ");
+// int max3 =  Input("Введите 3 число ");
+
+// if (max1>max2)
+//     {
+//         if (max1>max3)
+//         {
+//             Console.WriteLine($"max число = {max1}");
+//             return max1;
+//         }
+//         else
+//         {
+//             Console.WriteLine($"max число = {max3}");
+//             return max3;
+//         }
+//     }
+//     else
+//     {
+//         if (max2>max3)
+//         {
+//             Console.WriteLine($"max число = {max2}");
+//             return max2;
+//         }
+//         else
+//         {
+//             Console.WriteLine($"max число = {max3}");
+//             return max3;
+//         }
+//     }
+
+
+//------------------------------------------------------------------------------------------------------------------------------
+
+// Задача 6: Напишите программу, которая на вход принимает число и выдаёт, является ли число чётным (делится ли оно на два без остатка).
+// 4 -> да
+// -3 -> нет
+// 7 -> нет
+
+
+// int Input (string message)
+// {
+//     Console.WriteLine(message);
+//     string Peremen = Console.ReadLine();
+//     int Peremen2= Convert.ToInt32(Peremen);
+//     return Peremen2;
+// }
+
+// bool Honest (int Peremen)
+// {
+//     if (Peremen%2 == 0)
+//     {
+//         Console.WriteLine("Четное");
+//         return false;
+//     }
+//     else
+//     {
+//         Console.WriteLine("Не четное");
+//         return true;
+//     }
+// }
+
+// int a = Input("Введите число");
+// Honest(a); 
+
+
+//------------------------------------------------------------------------------------------------------------------------------
+
+
+// Задача 8: Напишите программу, которая на вход принимает число (N), а на выходе показывает все чётные числа от 1 до N.
+// 5 -> 2, 4
+// 8 -> 2, 4, 6, 8
+
+// int Input (string message)
+// {
+//     Console.WriteLine(message);
+//     string Peremen = Console.ReadLine();
+//     int Peremen2= Convert.ToInt32(Peremen);
+//     return Peremen2;
+// }
+
+// int Honest (int Peremen)
+// {
+//     int a = 0;
+//     if (Peremen%2 == 0)
+//     {
+//         while(a < Peremen)
+//         {
+//             a = a + 2;
+//             Console.Write($"{a} ");
+
+//         }
+//         return a;
+//     }
+//     else
+//     {
+//         Peremen = Peremen-1;
+//         while(a < Peremen)
+//         {
+//             a = a+2;
+//             Console.Write($"{a} ");
+
+//         }
+//         return a;
+//     }  
+    
+// }
+
+// int b = Input("Введите число");
+// Honest(b);

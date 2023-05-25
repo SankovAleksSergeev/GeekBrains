@@ -8,19 +8,19 @@
     "net6.0": []
   },
   "packageFolders": {
-    "C:\\Users\\sanko\\.nuget\\packages\\": {}
+    "C:\\Users\\User\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\sanko\\OneDrive\\Рабочий стол\\GeekBrains\\Seminar1\\Zadanie5\\Zadanie5.csproj",
+      "projectUniqueName": "C:\\Users\\User\\Desktop\\GeekBrains\\Seminar1\\Zadanie5\\Zadanie5.csproj",
       "projectName": "Zadanie5",
-      "projectPath": "C:\\Users\\sanko\\OneDrive\\Рабочий стол\\GeekBrains\\Seminar1\\Zadanie5\\Zadanie5.csproj",
-      "packagesPath": "C:\\Users\\sanko\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\sanko\\OneDrive\\Рабочий стол\\GeekBrains\\Seminar1\\Zadanie5\\obj\\",
+      "projectPath": "C:\\Users\\User\\Desktop\\GeekBrains\\Seminar1\\Zadanie5\\Zadanie5.csproj",
+      "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\User\\Desktop\\GeekBrains\\Seminar1\\Zadanie5\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\sanko\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net6.0"
