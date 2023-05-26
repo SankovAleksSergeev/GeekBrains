@@ -266,3 +266,74 @@
 
 // int b = Input("Введите число");
 // Honest(b);
+
+
+//-----------------------------------------------------------------------------------------------------------------------------
+
+// Вычислить факториал введенного числа. Например 4 = 1*2*3*4
+
+// int Print (string message)
+// {
+//     Console.WriteLine(message);
+//     string Peremen = Console.ReadLine();
+//     int Peremen2 = Convert.ToInt32(Peremen);
+//     if (Peremen2<0)
+//     {
+//         Console.WriteLine("Введите положительное число");
+    
+//     }
+//     return Peremen2;
+   
+// }
+
+
+
+// int Factorial (int Peremen)
+// {
+//     int count = 1;
+//     int b = 1;
+//     while (Peremen>=count)
+//     {
+//         b = b*count;
+//         count++;
+//     }
+//     Console.WriteLine(b);
+//     return b;
+// }
+
+// int faktorial = Print ("Введите число");
+// Factorial(faktorial);
+
+
+//-----------------------------------------------------------------------------------------------------------------------------
+
+// Написать программу решающаю дискриминант ax^2+bx+c=0
+
+
+// int Print (string message)
+// {
+//     Console.WriteLine(message);
+//     string Peremen = Console.ReadLine();
+//     int Peremen2 = Convert.ToInt32(Peremen);
+//     return Peremen2;
+// }
+// int a = Print("Введите a");
+// int b = Print("Введите b");
+// int c = Print("Введите c");
+
+// int D = (b*b)-4*a*c;
+// if (D<0)
+// {
+//     Console.WriteLine("Корней нет");
+// }
+// else if (D==0)
+// {
+//     D = -(b/2*a);
+//     Console.WriteLine($"Один корень : x = {D}");
+// }
+// else if (D>0)
+// {
+//     double x1 = (-b+(Math.Sqrt(D)))/2*a;
+//     double x2 = (-b-(Math.Sqrt(D)))/2*a;
+//     Console.WriteLine($"Два корня : x1 = {x1}, x2 = {x2}"); 
+// }

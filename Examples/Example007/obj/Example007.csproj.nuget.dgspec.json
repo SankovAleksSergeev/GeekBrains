@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\sanko\\OneDrive\\Рабочий стол\\GeekBrains\\Examples\\Example007\\Example007.csproj": {}
+    "C:\\Users\\User\\Desktop\\GeekBrains\\Examples\\Example007\\Example007.csproj": {}
   },
   "projects": {
-    "C:\\Users\\sanko\\OneDrive\\Рабочий стол\\GeekBrains\\Examples\\Example007\\Example007.csproj": {
+    "C:\\Users\\User\\Desktop\\GeekBrains\\Examples\\Example007\\Example007.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\sanko\\OneDrive\\Рабочий стол\\GeekBrains\\Examples\\Example007\\Example007.csproj",
+        "projectUniqueName": "C:\\Users\\User\\Desktop\\GeekBrains\\Examples\\Example007\\Example007.csproj",
         "projectName": "Example007",
-        "projectPath": "C:\\Users\\sanko\\OneDrive\\Рабочий стол\\GeekBrains\\Examples\\Example007\\Example007.csproj",
-        "packagesPath": "C:\\Users\\sanko\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\sanko\\OneDrive\\Рабочий стол\\GeekBrains\\Examples\\Example007\\obj\\",
+        "projectPath": "C:\\Users\\User\\Desktop\\GeekBrains\\Examples\\Example007\\Example007.csproj",
+        "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\User\\Desktop\\GeekBrains\\Examples\\Example007\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\sanko\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
