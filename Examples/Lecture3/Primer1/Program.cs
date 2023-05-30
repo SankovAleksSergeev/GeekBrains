@@ -92,41 +92,78 @@
 // маленькие буквы "к" заменить большими "К", а большие "С"
 // заменить маленькими "с"
 
-string text = "- Я думаю, - сказал князь, улыбнись, - что,"
-                +"ежели вам послали вместо нашего милого Винцегероде,"
-                +"вы бы взяли приступом согласия прусского короля."
-                +"Вы так красноречивы. Вы дадите мне чаю?";
+// string text = "- Я думаю, - сказал князь, улыбнись, - что,"
+//                 +"ежели вам послали вместо нашего милого Винцегероде,"
+//                 +"вы бы взяли приступом согласия прусского короля."
+//                 +"Вы так красноречивы. Вы дадите мне чаю?";
 
-// strindg s = "qwerty"
+// // strindg s = "qwerty"
 //              012
 //s[3] // r       
 
-string Replace(string text, char oldValue, char newValie )  // char - это какойто конкретный символ (char oldValue - это переменная символа в тескте, 
-                                                                      // char newValie - это переменная на которую мы будем менять символ в тексте 
+// string Replace(string text, char oldValue, char newValie )  // char - это какойто конкретный символ (char oldValue - это переменная символа в тескте, 
+//                                                                       // char newValie - это переменная на которую мы будем менять символ в тексте 
 
-{
-    string result = String.Empty;    //String.Empty -это иницилизация пустой строки
+// {
+//     string result = String.Empty;    //String.Empty -это иницилизация пустой строки
      
-    int length = text.Length;
-    for (int i =0; i < length; i++)
+//     int length = text.Length;
+//     for (int i =0; i < length; i++)
+//     {
+//         if (text[i]==oldValue)
+//         result = result + $"{newValie}";
+//         else 
+//         result = result + $"{text[i]}";
+//     }
+//     return result;
+// }
+
+// string newText = Replace (text, ' ', '|'  );
+// Console.WriteLine (newText); 
+// Console.WriteLine();
+
+// newText = Replace (newText, 'к', 'К'  );
+// Console.WriteLine (newText);
+// Console.WriteLine();
+
+// newText = Replace (newText, 'С', 'с'  );
+// Console.WriteLine (newText);
+// Console.WriteLine();
+
+
+// Алгорит выбора максимума 
+
+int[] arr = {1, 5, 4,3,2,6,7,1,1};
+void PrintArray (int[]array)
+{
+    int count = array.Length;
+    for (int i = 0; i < count; i++)
     {
-        if (text[i]==oldValue)
-        result = result + $"{newValie}";
-        else 
-        result = result + $"{text[i]}";
+        Console.Write($"{array[i]} ");
     }
-    return result;
+    Console.WriteLine();
 }
 
-string newText = Replace (text, ' ', '|'  );
-Console.WriteLine (newText); 
-Console.WriteLine();
+void SelectionSort (int[]array)
+{
+    for (int ind = 0; ind<array.Length-1; ind++)
+    {
+        int minPosition = ind;
+        for (int j = ind+1; j<array.Length;j++)
+        {
+            if (array[j]<array[minPosition]) minPosition = j;
+            
+        }
+        int temporary = array[ind];
+        array[ind]=array[minPosition];
+        array[minPosition] = temporary;
+    }
+    
+}
 
-newText = Replace (newText, 'к', 'К'  );
-Console.WriteLine (newText);
-Console.WriteLine();
+PrintArray(arr);
+SelectionSort(arr);
 
-newText = Replace (newText, 'С', 'с'  );
-Console.WriteLine (newText);
-Console.WriteLine();
+PrintArray(arr);
+
 
