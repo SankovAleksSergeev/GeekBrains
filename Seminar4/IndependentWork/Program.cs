@@ -49,14 +49,13 @@
 //     for (int count = 0; count<degree; count++) 
 //     {
 //         peremen = peremen*number;
-//         // Console.WriteLine(x3);
 //     }
-//     Console.WriteLine(peremen);
+//     Console.WriteLine($"{number}^{degree}={peremen}");
 // return peremen;
 // }
 
 // int x1 = Print ("Введите число");
-// int x2 = Print ("Введите число");
+// int x2 = Print ("Введите степень");
 // NaturalDegree(x1,x2);
 
 
@@ -88,7 +87,15 @@
 // }
 // else
 // {
-//     Console.WriteLine ("Введите положительное число");
+//     n = n * (-1);
+//     int x = 0;
+//     while(n > 0)
+//     {
+//         int q = (n % 10);
+//         n = (n / 10);
+//         x = x + q;
+//     }
+//     Console.WriteLine(x);
 // }
 
 // Задача 29: Напишите программу, которая задаёт массив из 8 элементов и выводит их на экран.
