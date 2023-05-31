@@ -34,16 +34,46 @@
 // 3, 5 -> 243 (3⁵)
 // 2, 4 -> 16
 
-// int Print (string number)
-// {
-//     Console.WriteLine(number); 
-//     string peremen = Console.ReadLine();
-//     int peremen2 =Convert.ToInt32(peremen);
-//     return peremen2;
+int Print (string number)
+{
+    Console.WriteLine(number); 
+    string peremen = Console.ReadLine();
+    int peremen2 =Convert.ToInt32(peremen);
+    return peremen2;
 
-// }
+}
 
-// int NaturalDegree (int number, int degree)
+double NaturalDegree (int number, int degree)
+{
+if (degree>0)
+{
+    int peremen = 1;
+    for (int count = 0; count<degree; count++) 
+    {
+        peremen = peremen*number;
+    }
+    Console.WriteLine($"{number}^{degree}={peremen}");
+    return peremen;
+}
+
+else
+{
+    double peremen = 1;
+    for (int count = 0; count>degree; count--) 
+    {
+        peremen = peremen*number;
+        Console.WriteLine(peremen);
+      
+    }
+    double d = 1/peremen;
+    Console.WriteLine($"{number}^{degree}={d}");
+    return peremen;
+}
+}
+
+
+
+
 // {
 //     int peremen = 1;
 //     for (int count = 0; count<degree; count++) 
@@ -54,9 +84,9 @@
 // return peremen;
 // }
 
-// int x1 = Print ("Введите число");
-// int x2 = Print ("Введите степень");
-// NaturalDegree(x1,x2);
+int x1 = Print ("Введите число");
+int x2 = Print ("Введите степень");
+NaturalDegree(x1,x2);
 
 
 
