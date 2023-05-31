@@ -62,27 +62,12 @@ else
     for (int count = 0; count>degree; count--) 
     {
         peremen = peremen*number;
-        Console.WriteLine(peremen);
-      
     }
     double d = 1/peremen;
     Console.WriteLine($"{number}^{degree}={d}");
-    return peremen;
+    return d;
 }
 }
-
-
-
-
-// {
-//     int peremen = 1;
-//     for (int count = 0; count<degree; count++) 
-//     {
-//         peremen = peremen*number;
-//     }
-//     Console.WriteLine($"{number}^{degree}={peremen}");
-// return peremen;
-// }
 
 int x1 = Print ("Введите число");
 int x2 = Print ("Введите степень");
