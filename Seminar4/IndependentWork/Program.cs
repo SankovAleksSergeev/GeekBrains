@@ -62,18 +62,9 @@
 //     {
 //         peremen1 = peremen1*number;
 //     }
-//         if (peremen1<0)
-//         {
 //             double d = 1/peremen1;
 //             Console.WriteLine($"{number}^{degree}={d}");
 //             return d;
-//         }
-//         else
-//         {
-//             double d = 1/peremen1;
-//             Console.WriteLine($"{number}^{degree}={d}");
-//             return d;
-//         }
 //     }
 // else if ((degree<0)&&(number>0))
 //     {
