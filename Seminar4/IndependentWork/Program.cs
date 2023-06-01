@@ -34,44 +34,75 @@
 // 3, 5 -> 243 (3⁵)
 // 2, 4 -> 16
 
-int Print (string number)
-{
-    Console.WriteLine(number); 
-    string peremen = Console.ReadLine();
-    int peremen2 =Convert.ToInt32(peremen);
-    return peremen2;
+// int Print (string number)
+// {
+//     Console.WriteLine(number); 
+//     string peremen = Console.ReadLine();
+//     int peremen2 =Convert.ToInt32(peremen);
+//     return peremen2;
 
-}
+// }
+// double NaturalDegree (int number, int degree)
+// {
+// if ((degree>0)&&(number>0))
+// {
+//     int peremen = 1;
+//     for (int count = 0; count<degree; count++) 
+//     {
+//         peremen = peremen*number;
+//     }
+//     Console.WriteLine($"{number}^{degree}={peremen}");
+//     return peremen;
+// }
 
-double NaturalDegree (int number, int degree)
-{
-if (degree>0)
-{
-    int peremen = 1;
-    for (int count = 0; count<degree; count++) 
-    {
-        peremen = peremen*number;
-    }
-    Console.WriteLine($"{number}^{degree}={peremen}");
-    return peremen;
-}
+// else if ((degree<0)&&(number<0))
+// {
+//     double peremen1 = 1;
+//     for (int count = 0; count>degree; count--) 
+//     {
+//         peremen1 = peremen1*number;
+//     }
+//         if (peremen1<0)
+//         {
+//             double d = 1/peremen1;
+//             Console.WriteLine($"{number}^{degree}={d}");
+//             return d;
+//         }
+//         else
+//         {
+//             double d = 1/peremen1;
+//             Console.WriteLine($"{number}^{degree}={d}");
+//             return d;
+//         }
+//     }
+// else if ((degree<0)&&(number>0))
+//     {
+//     double peremen2 = 1;
+//     for (int count = 0; count>degree; count--) 
+//     {
+//         peremen2 = peremen2*number;
+//     }
+//     double d = 1/peremen2;
+//     Console.WriteLine($"{number}^{degree}={d}");
+//     return d;
+//     }
+// else 
+// {
+//     int peremen4 = 1;
+//     for (int count = 0; count<degree; count++) 
+//     {
+//         peremen4 = peremen4*number;
+//     }
+//         Console.WriteLine($"{number}^{degree}={peremen4}");
+//         return peremen4;
+    
+// }
+// }
 
-else
-{
-    double peremen = 1;
-    for (int count = 0; count>degree; count--) 
-    {
-        peremen = peremen*number;
-    }
-    double d = 1/peremen;
-    Console.WriteLine($"{number}^{degree}={d}");
-    return d;
-}
-}
+// int x1 = Print ("Введите число");
+// int x2 = Print ("Введите степень");
+// NaturalDegree(x1,x2);
 
-int x1 = Print ("Введите число");
-int x2 = Print ("Введите степень");
-NaturalDegree(x1,x2);
 
 
 
@@ -98,7 +129,7 @@ NaturalDegree(x1,x2);
 //         n = (n / 10);
 //         x = x + q;
 //     }
-//     Console.WriteLine(x);
+//     Console.WriteLine($"Сумма цифр числа = {x}");
 // }
 // else
 // {
@@ -110,7 +141,7 @@ NaturalDegree(x1,x2);
 //         n = (n / 10);
 //         x = x + q;
 //     }
-//     Console.WriteLine(x);
+//     Console.WriteLine($"Сумма цифр числа = {x}");
 // }
 
 // Задача 29: Напишите программу, которая задаёт массив из 8 элементов и выводит их на экран.
@@ -130,7 +161,7 @@ NaturalDegree(x1,x2);
 //     int Dlina = peremen.Length;
 //     for (int i = 0; i<Dlina; i++)
 //     {
-//         peremen[i]= new Random().Next(0,1000);
+//         peremen[i]= new Random().Next(-1000,1000);
 //         Console.Write($"{peremen[i]}  ");
 //     }
 // }
