@@ -37,65 +37,63 @@
 // 3, 5 -> 243 (3⁵)
 // 2, 4 -> 16
 
-// int Print (string number)
-// {
-//     Console.WriteLine(number); 
-//     string peremen = Console.ReadLine();
-//     int peremen2 =Convert.ToInt32(peremen);
-//     return peremen2;
+int Print (string number)
+{
+    Console.WriteLine(number); 
+    string peremen = Console.ReadLine();
+    int peremen2 =Convert.ToInt32(peremen);
+    return peremen2;
 
-// }
-// double NaturalDegree (int number, int degree)
-// {
-// if ((degree>0)&&(number>0))
-// {
-//     int peremen = 1;
-//     for (int count = 0; count<degree; count++) 
-//     {
-//         peremen = peremen*number;
-//     }
-//     Console.WriteLine($"{number}^{degree}={peremen}");
-//     return peremen;
-// }
+}
+double NaturalDegree (int number, int degree)
+{
+if ((degree>0)&&(number>0))
+{
+    int peremen = 1;
+    for (int count = 0; count<degree; count++) 
+    {
+        peremen = peremen*number;
+    }
+    return peremen;
+}
 
-// else if ((degree<0)&&(number<0))
-// {
-//     double peremen1 = 1;
-//     for (int count = 0; count>degree; count--) 
-//     {
-//         peremen1 = peremen1*number;
-//     }
-//             double d = 1/peremen1;
-//             Console.WriteLine($"{number}^{degree}={d}");
-//             return d;
-//     }
-// else if ((degree<0)&&(number>0))
-//     {
-//     double peremen2 = 1;
-//     for (int count = 0; count>degree; count--) 
-//     {
-//         peremen2 = peremen2*number;
-//     }
-//     double d = 1/peremen2;
-//     Console.WriteLine($"{number}^{degree}={d}");
-//     return d;
-//     }
-// else 
-// {
-//     int peremen4 = 1;
-//     for (int count = 0; count<degree; count++) 
-//     {
-//         peremen4 = peremen4*number;
-//     }
-//         Console.WriteLine($"{number}^{degree}={peremen4}");
-//         return peremen4;
+else if ((degree<0)&&(number<0))
+{
+    double peremen1 = 1;
+    for (int count = 0; count>degree; count--) 
+    {
+        peremen1 = peremen1*number;
+    }
+            double d = 1/peremen1;
+            return d;
+    }
+else if ((degree<0)&&(number>0))
+    {
+    double peremen2 = 1;
+    for (int count = 0; count>degree; count--) 
+    {
+        peremen2 = peremen2*number;
+    }
+    double d = 1/peremen2;
+    return d;
+    }
+else 
+{
+    int peremen4 = 1;
+    for (int count = 0; count<degree; count++) 
+    {
+        peremen4 = peremen4*number;
+    }
+        return peremen4;
     
-// }
-// }
+}
+}
 
-// int x1 = Print ("Введите число");
-// int x2 = Print ("Введите степень");
-// NaturalDegree(x1,x2);
+int x1 = Print ("Введите число");
+int x2 = Print ("Введите степень");
+double X = NaturalDegree(x1,x2);
+Console.WriteLine($"степень числа = {X}");
+
 
 
 //------------------------------------------------------------------------------------------
@@ -177,31 +175,31 @@
 // заменить маленькими "с"
 
 
-string Text = "Главное противоречие между Францией и "
-+ "Китаем кроется в том, что на африканском континенте Китай " 
-+"выступает как гораздо более инициативный экономический игрок. "
-+"КНР давно стала первым экономическим партером Западной Африки, "
-+"где находится большинство бывших колоний Франции, которые та " 
-+"привыкла считать своей исторической сферой влияния.";
+// string Text = "Главное противоречие между Францией и "
+// + "Китаем кроется в том, что на африканском континенте Китай " 
+// +"выступает как гораздо более инициативный экономический игрок. "
+// +"КНР давно стала первым экономическим партером Западной Африки, "
+// +"где находится большинство бывших колоний Франции, которые та " 
+// +"привыкла считать своей исторической сферой влияния.";
 
-string RebytText (string text, char peremen1, char peremen2)
-{
-    string result = String.Empty;
-    int Dlina = Text.Length;
-    for (int i = 0; i < Dlina; i++ )
-    {
-        if (text[i]==peremen1)
-        {
-            result = result + $"{peremen2}";
-        }
-        else
-        {
-            result = result +$"{text[i]}";
-        }
-    }return result;
+// string RebytText (string text, char peremen1, char peremen2)
+// {
+//     string result = String.Empty;
+//     int Dlina = Text.Length;
+//     for (int i = 0; i < Dlina; i++ )
+//     {
+//         if (text[i]==peremen1)
+//         {
+//             result = result + $"{peremen2}";
+//         }
+//         else
+//         {
+//             result = result +$"{text[i]}";
+//         }
+//     }return result;
 
-}
+// }
 
-string newText = RebytText(Text, 'к','*');
-Console.WriteLine(newText);
-Console.WriteLine();
+// string newText = RebytText(Text, 'к','*');
+// Console.WriteLine(newText);
+// Console.WriteLine();
