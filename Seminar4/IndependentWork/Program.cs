@@ -37,62 +37,62 @@
 // 3, 5 -> 243 (3⁵)
 // 2, 4 -> 16
 
-int Print (string number)
-{
-    Console.WriteLine(number); 
-    string peremen = Console.ReadLine();
-    int peremen2 =Convert.ToInt32(peremen);
-    return peremen2;
+// int Print (string number)
+// {
+//     Console.WriteLine(number); 
+//     string peremen = Console.ReadLine();
+//     int peremen2 =Convert.ToInt32(peremen);
+//     return peremen2;
 
-}
-double NaturalDegree (int number, int degree)
-{
-if ((degree>0)&&(number>0))
-{
-    int peremen = 1;
-    for (int count = 0; count<degree; count++) 
-    {
-        peremen = peremen*number;
-    }
-    return peremen;
-}
+// }
+// double NaturalDegree (int number, int degree)
+// {
+// if ((degree>0)&&(number>0))
+// {
+//     int peremen = 1;
+//     for (int count = 0; count<degree; count++) 
+//     {
+//         peremen = peremen*number;
+//     }
+//     return peremen;
+// }
 
-else if ((degree<0)&&(number<0))
-{
-    double peremen1 = 1;
-    for (int count = 0; count>degree; count--) 
-    {
-        peremen1 = peremen1*number;
-    }
-            double d = 1/peremen1;
-            return d;
-    }
-else if ((degree<0)&&(number>0))
-    {
-    double peremen2 = 1;
-    for (int count = 0; count>degree; count--) 
-    {
-        peremen2 = peremen2*number;
-    }
-    double d = 1/peremen2;
-    return d;
-    }
-else 
-{
-    int peremen4 = 1;
-    for (int count = 0; count<degree; count++) 
-    {
-        peremen4 = peremen4*number;
-    }
-        return peremen4;
+// else if ((degree<0)&&(number<0))
+// {
+//     double peremen1 = 1;
+//     for (int count = 0; count>degree; count--) 
+//     {
+//         peremen1 = peremen1*number;
+//     }
+//             double d = 1/peremen1;
+//             return d;
+//     }
+// else if ((degree<0)&&(number>0))
+//     {
+//     double peremen2 = 1;
+//     for (int count = 0; count>degree; count--) 
+//     {
+//         peremen2 = peremen2*number;
+//     }
+//     double d = 1/peremen2;
+//     return d;
+//     }
+// else 
+// {
+//     int peremen4 = 1;
+//     for (int count = 0; count<degree; count++) 
+//     {
+//         peremen4 = peremen4*number;
+//     }
+//         return peremen4;
     
-}
-}
+// }
+// }
 
-int x1 = Print ("Введите число");
-int x2 = Print ("Введите степень");
-double X = NaturalDegree(x1,x2);
-Console.WriteLine($"степень числа = {X}");
+// int x1 = Print ("Введите число");
+// int x2 = Print ("Введите степень");
+// double X = NaturalDegree(x1,x2);
+// Console.WriteLine($"степень числа = {X}");
 
 
 
@@ -203,3 +203,84 @@ Console.WriteLine($"степень числа = {X}");
 // string newText = RebytText(Text, 'к','*');
 // Console.WriteLine(newText);
 // Console.WriteLine();
+
+
+//------------------------------------------------------------------------------------------
+
+
+// int Prompt (string message)
+// {
+//     System.Console.Write(message);
+//     string peremen = System.Console.ReadLine();
+//     int result = int.Parse(peremen);
+//     return result;
+// }
+// int [] GenerateArray (int Length, int  min , int max)
+// {
+//     int [] array =new int [Length];
+//     // Random random = new Random();
+//     for (int i=0; i<Length; i++)
+//     {
+//         array[i] = new Random().Next(min , max+1);
+//     }
+//     return array;
+// }
+
+// void PrinrArray (int [] array)
+// {
+//     System.Console.Write("[");
+//     for (int i =0; i<array.Length-1; i++)
+//     {
+//         System.Console.Write($"{array[i]}, ");
+//     }
+//     System.Console.Write($"{array[array.Length-1]}");
+//     System.Console.Write("]");
+// }
+
+// int Length = Prompt ("Введите длину массива ");
+// int min  = Prompt ("Введите начальное значение, для диапазона случайного чисел ");
+// int max = Prompt("Введите конечное значение, для диапазона случайного чисел ");
+// int [] array = GenerateArray(Length, min, max);
+// PrinrArray(array);
+    
+
+
+
+//------------------------------------------------------------------------------------------
+
+// string Text (string text )
+// {
+//     Console.Write(text);
+//     string peremen = Console.ReadLine();
+//     return peremen;
+
+// }
+
+// string newText (string text, char x1 , char x2 )
+// {
+//     string result = String.Empty;
+//     int Dlina = text.Length;
+//     for (int i=0; i<Dlina; i++)
+//     {
+//         if (text[i]==x1)
+//         {
+//             result = result +$"{x2}";
+//         }
+//         else
+//         {
+//             result = result +$"{text[i]}";
+//         }
+        
+//     }
+//     return result;
+// }
+
+// string x = Text ("Введите текст ");
+// Console.WriteLine();
+// string x2 = newText(x,' ', '+');
+// Console.WriteLine(x2);
+
+
+//------------------------------------------------------------------------------------------
+
+
