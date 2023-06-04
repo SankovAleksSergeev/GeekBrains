@@ -46,16 +46,16 @@ int  EvenNumber (int [] array)
     return count;  
 }
 
-int Length = Input("Введите длинну массива ");
-int min = Input("Введите начальное min значение диапазона массива ");
-int max = Input("Введите max значение диапазона массива ");
-int [] array = RandomMassiv(Length, min, max);
-Console.WriteLine();
-Print (array);
-int Parity = EvenNumber(array);
-Console.WriteLine();
-Console.WriteLine();
-Console.WriteLine($"Четных чисел в массиве = {Parity}");
+// int Length = Input("Введите длинну массива ");
+// int min = Input("Введите начальное min значение диапазона массива ");
+// int max = Input("Введите max значение диапазона массива ");
+// int [] array = RandomMassiv(Length, min, max);
+// Console.WriteLine();
+// Print (array);
+// int Parity = EvenNumber(array);
+// Console.WriteLine();
+// Console.WriteLine();
+// Console.WriteLine($"Четных чисел в массиве = {Parity}");
 
 
 
@@ -153,20 +153,20 @@ double Difference (double max, double min)
     double difference = max - min;
     return difference;
 }
-// int Length = Input("Введите длинну массива ");
-// int min = Input("Введите начальное min значение диапазона массива ");
-// int max = Input("Введите max значение диапазона массива ");
+int Length = Input("Введите длинну массива ");
+int min = Input("Введите начальное min значение диапазона массива ");
+int max = Input("Введите max значение диапазона массива ");
 
-// double [] array = DoubleRandomMassiv(Length, min, max);
-// DoublePrint (array);
-// Console.WriteLine();
-// Console.WriteLine();
+double [] array = DoubleRandomMassiv(Length, min, max);
+DoublePrint (array);
+Console.WriteLine();
+Console.WriteLine();
 
-// double MaxNumder = MaxNumderMassiv(array);
-// Console.WriteLine($"Max элемент массива = {MaxNumder}");
+double MaxNumder = MaxNumderMassiv(array);
+Console.WriteLine($"Max элемент массива = {MaxNumder}");
 
-// double MinNumder = MinNumderMassiv(array);
-// Console.WriteLine($"Min элемент массива = {MinNumder}");
+double MinNumder = MinNumderMassiv(array);
+Console.WriteLine($"Min элемент массива = {MinNumder}");
 
-// double difference = Difference(MaxNumder, MinNumder);
-// Console.WriteLine($"Разница: {MaxNumder} - ({MinNumder}) = {difference}");
+double difference = Difference(MaxNumder, MinNumder);
+Console.WriteLine($"Разница: {MaxNumder} - ({MinNumder}) = {difference}");
