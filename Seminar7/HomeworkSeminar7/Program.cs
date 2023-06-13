@@ -49,58 +49,58 @@ int Imput (string message)
 // 8 4 2 4
 // 17 -> такого числа в массиве нет
 
-// Console.Write("Создайте рандомный двумерный массив. Для этого ");
-// int Rows = Imput("введите количество строк ");
-// int Columns = Imput("Введите количество столбцов ");
-// int [,] array = new int [Rows, Columns];
+Console.Write("Создайте рандомный двумерный массив. Для этого ");
+int Rows = Imput("введите количество строк ");
+int Columns = Imput("Введите количество столбцов ");
+int [,] array = new int [Rows, Columns];
 
-// int [,] RandomPrintArray (int min, int max)
-// {
-//     for (int i = 0; i < array.GetLength(0); i++)
-//     {
-//         for (int j = 0; j < array.GetLength(1); j++)
-//         {
-//             array[i,j] = new Random().Next(min, (max+1));
-//             Console.Write($"{array[i,j]}   ");
-//         }
-//         Console.WriteLine();  
-//     }
-//     return array;
-// }
+int [,] RandomPrintArray (int min, int max)
+{
+    for (int i = 0; i < array.GetLength(0); i++)
+    {
+        for (int j = 0; j < array.GetLength(1); j++)
+        {
+            array[i,j] = new Random().Next(min, (max+1));
+            Console.Write($"{array[i,j]}   ");
+        }
+        Console.WriteLine();  
+    }
+    return array;
+}
 
-// void ElementPosition (int rows, int colomns)
-// {
-//     if ((rows>array.GetLength(0))||(colomns>array.GetLength(1)))
-//         {
-//             Console.WriteLine ($"Такого элемента нет");
-//         }
-//     else
-//     {
-//         for (int i = 0; i < array.GetLength(0); i++)
-//         {
-//             for (int j = 0; j < array.GetLength(1); j++)
-//             {
-//                 if ((i==rows-1)&&(j==colomns-1))
-//                 {
-//                     Console.WriteLine ($"Значение запрашиваемого элемента > {array[i,j]}");
-//                 }
-//             }
-//         } 
-//     }
-// }
+void ElementPosition (int rows, int colomns)
+{
+    if ((rows>array.GetLength(0)) || (colomns>array.GetLength(1)) || (rows<0)|| (colomns<0))
+        {
+            Console.WriteLine ($"Такого элемента нет");
+        }
+    else
+    {
+        for (int i = 0; i < array.GetLength(0); i++)
+        {
+            for (int j = 0; j < array.GetLength(1); j++)
+            {
+                if ((i==rows-1)&&(j==colomns-1))
+                {
+                    Console.WriteLine ($"Значение запрашиваемого элемента > {array[i,j]}");
+                }
+            }
+        } 
+    }
+}
 
 
-// int Min = Imput ("Введите начальние min значение диапазона массива ");
-// int Max = Imput ("Введите max значение диапазона массива ");
-// Console.WriteLine();
-// Console.WriteLine("Полученный массив:");
-// Console.WriteLine();
-// RandomPrintArray(Min, Max);
-// Console.WriteLine();
-// Console.Write("Для того чтобы вывести значение конкретного элемента массива ");
-// int PositionRows= Imput("введите номер строки. ");
-// int PositionColumns = Imput("Введите номер столбца ");
-// ElementPosition(PositionRows,PositionColumns);
+int Min = Imput ("Введите начальние min значение диапазона массива ");
+int Max = Imput ("Введите max значение диапазона массива ");
+Console.WriteLine();
+Console.WriteLine("Полученный массив:");
+Console.WriteLine();
+RandomPrintArray(Min, Max);
+Console.WriteLine();
+Console.Write("Для того чтобы вывести значение конкретного элемента массива ");
+int PositionRows= Imput("введите номер строки. ");
+int PositionColumns = Imput("Введите номер столбца ");
+ElementPosition(PositionRows,PositionColumns);
 
 
 //----------------------------------------------------------------------------------
