@@ -41,10 +41,10 @@ void Count (int [] array)
     Console.Write($" > {count}");
 } 
 
-// int LengthMassiv = new Random().Next(3,10);
-// int [] x = ImputMassiv(LengthMassiv);
-// PrintMassiv(x);
-// Count(x);
+int LengthMassiv = new Random().Next(3,10);
+int [] x = ImputMassiv(LengthMassiv);
+PrintMassiv(x);
+Count(x);
 
 
 
@@ -71,8 +71,8 @@ void Intersection (double b1, double b2, double k1, double k2)
     }
 }
 
-double b1 = Imput ("Введите B1");
-double k1 = Imput ("Введите K1");
-double b2 = Imput ("Введите B2");
-double k2 = Imput ("Введите K2");
-Intersection (b1,b2,k1,k2);
+// double b1 = Imput ("Введите B1");
+// double k1 = Imput ("Введите K1");
+// double b2 = Imput ("Введите B2");
+// double k2 = Imput ("Введите K2");
+// Intersection (b1,b2,k1,k2);
