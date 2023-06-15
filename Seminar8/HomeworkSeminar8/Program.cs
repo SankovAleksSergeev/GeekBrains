@@ -8,12 +8,12 @@
 // 9 5 3 2
 // 8 4 4 2
 
-int Imput (string message)
-{
-    Console.WriteLine(message);
-    int peremen = Convert.ToInt32(Console.ReadLine());
-    return peremen;
-}
+// int Imput (string message)
+// {
+//     Console.WriteLine(message);
+//     int peremen = Convert.ToInt32(Console.ReadLine());
+//     return peremen;
+// }
 
 // int Rows = Imput("Введите количество строк ");
 // int Colomns = Imput("Введите количество столбцов ");
@@ -160,3 +160,150 @@ int Imput (string message)
 // Результирующая матрица будет:
 // 18 20
 // 15 18
+
+// int Imput (string message)
+// {
+//     Console.WriteLine(message+" ");
+//     int peremen = Convert.ToInt32(Console.ReadLine());
+//     return peremen;
+// }
+
+//                                 //Операция умножения двух матриц выполнима только 
+//                                 //в том случае, если число столбцов в первом сомножителе равно числу строк во втором
+
+// int Rows1= Imput($"Введите количество строк и столбцов первой матрицы:");  // строки
+// int Colomns1 = Imput("");                                                  // столбцы
+// int [,] array1 = new int [Rows1, Colomns1];
+
+// int Rows2 = Imput($"Введите количество столбцов второй матрицы:");  
+// int [,] array2 = new int [Colomns1, Rows2]; 
+// int Min1 = Imput ("Введите начальние min и max значение диапазона массива матриц:");
+// int Max1 = Imput ("");
+
+// int [,] array3 = new int [Rows1, Rows2]; 
+
+// int [,] RandomMassiv(int [,] massiv, int max, int min)
+// {
+//     for (int i = 0; i < massiv.GetLength(0); i++)
+//     {
+//         for (int j = 0; j < massiv.GetLength(1); j++)
+//         {
+//             massiv[i,j] = new Random().Next(max, min+1);
+//         }
+//     }
+//     return massiv; 
+// }
+
+// void Print (int [,] massiv)
+// {
+//     for (int i = 0; i < massiv.GetLength(0); i++)
+//     {
+//         for (int j = 0; j < massiv.GetLength(1); j++)
+//         {
+//             Console.Write($"{massiv[i,j]}  ");
+//         }
+//         Console.WriteLine();
+//     }
+// }
+
+// Console.WriteLine();
+// RandomMassiv(array1, Min1,Max1);
+// Console.WriteLine("Первая матрица:"); 
+// Print(array1);
+// Console.WriteLine();
+// RandomMassiv(array2, Min1,Max1);
+// Console.WriteLine("Вторая матрица:");
+// Print(array2);
+
+
+// void WorkArray (int [,] array1, int [,] array2, int [,] array3 )
+// {
+//     for (int i = 0; i < array3.GetLength(0); i++)
+//     {
+//         for (int j = 0; j < array3.GetLength(1); j++)
+//         {
+//             int sum =0; 
+//             for (int x = 0; x < array1.GetLength(1); x++)
+//             {
+//                 sum = sum+(array1[i,x]*array2[x,j]);  
+//             }
+//             array3[i,j] = sum; 
+//         }
+//     }
+
+// }
+
+// Console.WriteLine("");
+// Console.WriteLine("Произведение двух матриц:");
+// WorkArray(array1, array2, array3);
+// Print(array3);
+
+
+//-----------------------------------------------------------------------------------------------------------------------------
+
+// Задача 60. ...Сформируйте трёхмерный массив из неповторяющихся двузначных чисел. Напишите программу, которая будет построчно выводить массив, добавляя индексы каждого элемента.
+// Массив размером 2 x 2 x 2
+// 66(0,0,0) 25(0,1,0)
+// 34(1,0,0) 41(1,1,0)
+// 27(0,0,1) 90(0,1,1)
+// 26(1,0,1) 55(1,1,1)
+
+Console.Clear();
+string a ="Задача 60: Сформируйте трёхмерный массив из неповторяющихся двузначных чисел. "
++"Напишите программу, которая будет построчно выводить массив, добавляя индексы каждого элемента.";
+Console.WriteLine(a);
+Console.WriteLine();
+ 
+int Imput (string message)
+{
+    Console.Write(message+" ");
+    int peremen = Convert.ToInt32(Console.ReadLine());
+    return peremen;
+}
+
+int RowsLength = Imput("Введите длинну массива > ");
+int height = Imput("Введите высоту массива > ");
+int width = Imput("Введите ширину массива > ");
+int [,,] array = new int [RowsLength, height, width];
+
+void PrintArray (int [,,] massiv)
+{
+    for (int i = 0; i < array.GetLength(0); i++)
+    {
+        for (int j = 0; j < array.GetLength(1); j++)
+        {
+            for (int k = 0; k < array.GetLength(2); k++)
+            {
+                Console.Write($"{array[i,j,k]}{(i,j,k)}  ");
+            }
+            Console.WriteLine("");
+        }
+    } 
+}
+
+
+int [,,] RandomMassiv(int [,,] massiv, int max, int min)
+{
+    
+    for (int i = 0; i < massiv.GetLength(0); i++)
+    {
+        for (int j = 0; j < massiv.GetLength(1); j++)
+        {
+            for (int k = 0; k < massiv.GetLength(2); k++)
+            {
+                massiv [i,j,k] = new Random().Next(max, min+1);
+            }
+        }
+    }
+    return massiv; 
+}
+
+int Min = Imput("Введите начальние min и max значение диапазона массива > ");
+int Max = Imput(">");
+Console.WriteLine();
+Console.WriteLine("Полученный массив и его индексы");
+RandomMassiv(array,Min,Max);
+PrintArray(array);
+
+
+//-----------------------------------------------------------------------------------------------------------------------------
