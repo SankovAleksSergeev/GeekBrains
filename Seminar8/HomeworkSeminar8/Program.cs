@@ -8,15 +8,21 @@
 // 9 5 3 2
 // 8 4 4 2
 
+// Console.Clear();
+// string a ="Задача 54: Задайте двумерный массив. Напишите программу, которая упорядочит по убыванию элементы каждой строки двумерного массива.";
+// Console.WriteLine(a);
+// Console.WriteLine();
+
+
 // int Imput (string message)
 // {
-//     Console.WriteLine(message);
+//     Console.Write(message);
 //     int peremen = Convert.ToInt32(Console.ReadLine());
 //     return peremen;
 // }
 
-// int Rows = Imput("Введите количество строк ");
-// int Colomns = Imput("Введите количество столбцов ");
+// int Rows = Imput("Введите количество строк > ");
+// int Colomns = Imput("Введите количество столбцов > ");
 // int [,] array = new int [Rows, Colomns];
 
 // int [,] RandomMassiv(int max, int min)
@@ -64,8 +70,8 @@
 // }
 
 
-// int Min = Imput ("Введите начальние min значение диапазона массива ");
-// int Max = Imput ("Введите max значение диапазона массива ");
+// int Min = Imput ("Введите начальние min значение диапазона массива > ");
+// int Max = Imput ("Введите max значение диапазона массива > ");
 // Console.WriteLine();
 // RandomMassiv(Min, Max);
 // Console.WriteLine("Случайный массив:");
@@ -87,9 +93,20 @@
 // 5 2 6 7
 // Программа считает сумму элементов в каждой строке и выдаёт номер строки с наименьшей суммой элементов: 1 строка
 
+// Console.Clear();
+// string a ="Задача 56: Задайте прямоугольный двумерный массив. Напишите программу, которая будет находить строку с наименьшей суммой элементов.";
+// Console.WriteLine(a);
+// Console.WriteLine();
 
-// int Rows = Imput("Введите количество строк ");
-// int Colomns = Imput("Введите количество столбцов ");
+// int Imput (string message)
+// {
+//     Console.Write(message);
+//     int peremen = Convert.ToInt32(Console.ReadLine());
+//     return peremen;
+// }
+
+// int Rows = Imput("Введите количество строк > ");
+// int Colomns = Imput("Введите количество столбцов > ");
 // int [,] array = new int [Rows, Colomns];
 
 // int [,] RandomMassiv(int max, int min)
@@ -106,13 +123,15 @@
 
 // void Print (int [,] array)
 // {
+//     int x = 1;
 //     for (int i = 0; i < array.GetLength(0); i++)
 //     {
 //         for (int j = 0; j < array.GetLength(1); j++)
 //         {
 //             Console.Write($"{array[i,j]}  ");
 //         }
-//         Console.WriteLine();
+//         Console.WriteLine($" | {x} строка");
+//         x = x+1; 
 //     }
 // }
 
@@ -141,8 +160,8 @@
 //     Console.WriteLine($"Строка с наименьшей суммой элементов > {index} (сумма строки = {sumLine1})");
 // }
 
-// int Min = Imput ("Введите начальние min значение диапазона массива ");
-// int Max = Imput ("Введите max значение диапазона массива ");
+// int Min = Imput ("Введите начальние min значение диапазона массива > ");
+// int Max = Imput ("Введите max значение диапазона массива > ");
 // Console.WriteLine();
 // RandomMassiv(Min,Max);
 // Console.WriteLine("Созданный массив:");
@@ -153,13 +172,17 @@
 //-----------------------------------------------------------------------------------------------------------------------------
 
 
-// Задача 58: Задайте две матрицы. Напишите программу, которая будет находить произведение двух матриц.
-// Например, даны 2 матрицы:
+
 // 2 4 | 3 4
 // 3 2 | 3 3
 // Результирующая матрица будет:
 // 18 20
 // 15 18
+
+// Console.Clear();
+// string a ="Задача 58: Задайте две матрицы. Напишите программу, которая будет находить произведение двух матриц";
+// Console.WriteLine(a);
+// Console.WriteLine();
 
 // int Imput (string message)
 // {
@@ -248,62 +271,176 @@
 // 27(0,0,1) 90(0,1,1)
 // 26(1,0,1) 55(1,1,1)
 
+// Console.Clear();
+// string a ="Задача 60: Сформируйте трёхмерный массив из неповторяющихся двузначных чисел. "
+// +"Напишите программу, которая будет построчно выводить массив, добавляя индексы каждого элемента.";
+// Console.WriteLine(a);
+// Console.WriteLine();
+ 
+// int Imput (string message)
+// {
+//     Console.Write(message+" ");
+//     int peremen = Convert.ToInt32(Console.ReadLine());
+//     return peremen;
+// }
+
+// int RowsLength = Imput("Введите длинну массива > ");
+// int height = Imput("Введите высоту массива > ");
+// int width = Imput("Введите ширину массива > ");
+// int [,,] array = new int [RowsLength, height, width];
+
+// void PrintArray (int [,,] massiv)
+// {
+//     for (int i = 0; i < array.GetLength(0); i++)
+//     {
+//         for (int j = 0; j < array.GetLength(1); j++)
+//         {
+//             for (int k = 0; k < array.GetLength(2); k++)
+//             {
+//                 Console.Write($"{array[i,j,k]}{(i,j,k)}  ");
+//             }
+//             Console.WriteLine("");
+//         }
+//     } 
+// }
+
+
+// int [,,] RandomMassiv(int [,,] massiv, int max, int min)
+// {
+    
+//     for (int i = 0; i < massiv.GetLength(0); i++)
+//     {
+//         for (int j = 0; j < massiv.GetLength(1); j++)
+//         {
+//             for (int k = 0; k < massiv.GetLength(2); k++)
+//             {
+//                 massiv [i,j,k] = new Random().Next(max, min+1);
+//             }
+//         }
+//     }
+//     return massiv; 
+// }
+
+
+// int Min = Imput("Введите начальние min и max значение диапазона массива > ");
+// int Max = Imput(">");
+// Console.WriteLine();
+// Console.WriteLine("Полученный массив и его индексы");
+// RandomMassiv(array,Min,Max);
+// PrintArray(array);
+
+
+//-----------------------------------------------------------------------------------------------------------------------------
+
+
+// Задача 62. Напишите программу, которая заполнит спирально массив 4 на 4.
+// Например, на выходе получается вот такой массив:
+// 01 02 03 04
+// 12 13 14 05
+// 11 16 15 06
+// 10 09 08 07
+
 Console.Clear();
-string a ="Задача 60: Сформируйте трёхмерный массив из неповторяющихся двузначных чисел. "
-+"Напишите программу, которая будет построчно выводить массив, добавляя индексы каждого элемента.";
+string a ="Задача 62. Напишите программу, которая заполнит спирально массив 4 на 4.";
 Console.WriteLine(a);
 Console.WriteLine();
- 
+
 int Imput (string message)
 {
-    Console.Write(message+" ");
+    Console.Write(message);
     int peremen = Convert.ToInt32(Console.ReadLine());
     return peremen;
 }
 
-int RowsLength = Imput("Введите длинну массива > ");
-int height = Imput("Введите высоту массива > ");
-int width = Imput("Введите ширину массива > ");
-int [,,] array = new int [RowsLength, height, width];
+int size = Imput("Введите размер квадратного массива > ");
+Console.WriteLine();
+int [,] array = new int [size , size];
 
-void PrintArray (int [,,] massiv)
+
+void Print (int [,] massiv)
 {
-    for (int i = 0; i < array.GetLength(0); i++)
-    {
-        for (int j = 0; j < array.GetLength(1); j++)
-        {
-            for (int k = 0; k < array.GetLength(2); k++)
-            {
-                Console.Write($"{array[i,j,k]}{(i,j,k)}  ");
-            }
-            Console.WriteLine("");
-        }
-    } 
-}
-
-
-int [,,] RandomMassiv(int [,,] massiv, int max, int min)
-{
-    
     for (int i = 0; i < massiv.GetLength(0); i++)
     {
         for (int j = 0; j < massiv.GetLength(1); j++)
         {
-            for (int k = 0; k < massiv.GetLength(2); k++)
+            if((massiv.GetLength(0)>4)&&(massiv.GetLength(0)<10))
             {
-                massiv [i,j,k] = new Random().Next(max, min+1);
+                if ((i==0)&&(j<=massiv.GetLength(1)))
+                {
+                    Console.Write($"0{massiv[i,j]} ");
+                }
+                else if((j==massiv.GetLength(1)-1) && (i<10-array.GetLength(0)))
+                {
+                    Console.Write($"0{massiv[i,j]} ");
+                }
+                else
+                {
+                    Console.Write($"{massiv[i,j]} ");
+                }
             }
+
+            if( massiv.GetLength(0)==4)
+            {
+                if ((i==0)&&(j<=massiv.GetLength(1)))
+                {
+                    Console.Write($"0{massiv[i,j]} ");
+                }
+                else if((j==massiv.GetLength(1)-1) && (i<array.GetLength(0)))
+                {
+                    Console.Write($"0{massiv[i,j]} ");
+                }
+                else if((i==massiv.GetLength(0)-1) && (j>=1))
+                {
+                    Console.Write($"0{massiv[i,j]} ");
+                }
+                else
+                {
+                    Console.Write($"{massiv[i,j]} ");
+                }
+            }
+
+            if( massiv.GetLength(0)<4)
+            {
+                Console.Write($"0{massiv[i,j]} "); 
+            }
+
+            if( massiv.GetLength(0)>=10)
+            {
+                Console.Write($"{massiv[i,j]} "); 
+            }
+
         }
+        Console.WriteLine();
+    } 
+}
+void RandomMassiv(int [,] massiv)
+{
+   int variable = 1;
+   int i=0;
+   int j=0;
+   while(variable<= massiv.GetLength(0)* massiv.GetLength(1))
+   {
+    massiv[i,j]=variable;
+    variable++;
+    if ((i<=j+1)&&(j+i<massiv.GetLength(1)-1))
+    {
+        j++;
     }
-    return massiv; 
+    else if ((i<j)&&(i+j>=massiv.GetLength(0)-1))
+    {
+        i++;
+    }
+    else if ((i>=j)&&(i+j>massiv.GetLength(1)-1))
+    {
+        j--;
+    }
+    else
+    {
+        i--;
+    }
+   }
 }
 
-int Min = Imput("Введите начальние min и max значение диапазона массива > ");
-int Max = Imput(">");
-Console.WriteLine();
-Console.WriteLine("Полученный массив и его индексы");
-RandomMassiv(array,Min,Max);
-PrintArray(array);
-
-
-//-----------------------------------------------------------------------------------------------------------------------------
+RandomMassiv(array);
+Console.WriteLine("Полученный массив:");
+Print(array);
